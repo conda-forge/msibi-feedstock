@@ -1,6 +1,6 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "msibi" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/mosdef-hub/msibi/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 0b8a2ae318accf6fb6286cde89c08961162157a38758257feac4ecf5a14f3ef1
+  sha256: 8cab2ec3c8cd9f79ec5e044580432336e45b53b7a459e339c8bd82506a040ce9
 
 build:
   noarch: python
@@ -35,7 +35,7 @@ requirements:
 
 test:
   imports:
-    - msibi 
+    - msibi
   requires:
     - pip
     - python {{ python_min }}
