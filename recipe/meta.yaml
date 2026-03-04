@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "msibi" %}
-{% set version = "0.2.1" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/mosdef-hub/msibi/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 8cab2ec3c8cd9f79ec5e044580432336e45b53b7a459e339c8bd82506a040ce9
+  sha256: 5902ef6963de16b3d7e874868108782e61575da388f9ccdb851a1dcde62c0dd1
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - freud >=3.4,<4.0
     - cmeutils >=1.4
     - gsd >=3.0,<=4.0
-    - hoomd >=5.0
+    - hoomd >=5.4
     - numpy >=2.0,<2.3
     - pandas >=2.3,<3.0
     - mdanalysis >=2.9,<3.0
